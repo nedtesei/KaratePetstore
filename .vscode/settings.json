@@ -1,0 +1,3 @@
+{
+    "karateIDE.karateCli.karateOptions": "-f json,cucumber:json,junit:xml",
+}
