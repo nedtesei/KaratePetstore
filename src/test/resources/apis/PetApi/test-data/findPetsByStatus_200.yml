@@ -1,0 +1,8 @@
+statusCode: 200
+headers: {}
+params:
+  status: available
+body: null
+matchResponse: false
+responseMatch: '##array'
+responseMatchesEach: {}

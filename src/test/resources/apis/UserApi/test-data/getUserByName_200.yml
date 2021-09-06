@@ -1,0 +1,16 @@
+statusCode: 200
+headers: {}
+params:
+  username: fill some value
+body: null
+matchResponse: false
+responseMatch:
+  id: '##number'
+  username: '##string'
+  firstName: '##string'
+  lastName: '##string'
+  email: '##string'
+  password: '##string'
+  phone: '##string'
+  userStatus: '##number'
+responseMatchesEach: {}

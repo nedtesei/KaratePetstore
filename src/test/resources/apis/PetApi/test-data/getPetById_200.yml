@@ -1,0 +1,20 @@
+statusCode: 200
+headers: {}
+params:
+  petId: 0
+body: null
+matchResponse: false
+responseMatch:
+  id: '##number'
+  name: '#string'
+  category:
+    id: '##number'
+    name: '##string'
+  photoUrls: '#array'
+  tags: '##array'
+  status: '##string'
+responseMatchesEach:
+  photoUrls: '##string'
+  tags:
+    id: '##number'
+    name: '##string'

@@ -1,0 +1,10 @@
+statusCode: 405
+headers: {}
+params:
+  petId: 0
+  name: fill some value
+  status: fill some value
+body: null
+matchResponse: false
+responseMatch: null
+responseMatchesEach: {}

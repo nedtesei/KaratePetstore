@@ -1,0 +1,8 @@
+statusCode: 400
+headers: {}
+params:
+  status: available
+body: null
+matchResponse: false
+responseMatch: null
+responseMatchesEach: {}

@@ -1,0 +1,9 @@
+statusCode: 200
+headers: {}
+params:
+  username: fill some value
+  password: fill some value
+body: null
+matchResponse: false
+responseMatch: '##string'
+responseMatchesEach: {}

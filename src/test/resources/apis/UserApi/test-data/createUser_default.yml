@@ -1,0 +1,23 @@
+statusCode: .nan
+headers: {}
+params: null
+body:
+  id: 10
+  username: theUser
+  firstName: John
+  lastName: James
+  email: john@email.com
+  password: '12345'
+  phone: '12345'
+  userStatus: 1
+matchResponse: false
+responseMatch:
+  id: '##number'
+  username: '##string'
+  firstName: '##string'
+  lastName: '##string'
+  email: '##string'
+  password: '##string'
+  phone: '##string'
+  userStatus: '##number'
+responseMatchesEach: {}

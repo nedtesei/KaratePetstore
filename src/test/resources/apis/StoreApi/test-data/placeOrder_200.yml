@@ -1,0 +1,19 @@
+statusCode: 200
+headers: {}
+params: null
+body:
+  id: 10
+  petId: 198772
+  quantity: 7
+  shipDate: fill some value
+  status: approved
+  complete: true
+matchResponse: false
+responseMatch:
+  id: '##number'
+  petId: '##number'
+  quantity: '##number'
+  shipDate: '##string'
+  status: '##string'
+  complete: '##boolean'
+responseMatchesEach: {}

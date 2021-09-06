@@ -1,0 +1,18 @@
+statusCode: 405
+headers: {}
+params: null
+body:
+  id: 10
+  name: ca
+  category:
+    id: hello
+    name: Dogs
+  photoUrls:
+    - fill some value
+  tags:
+    - id: 0
+      name: fill some value
+  status: available
+matchResponse: false
+responseMatch: null
+responseMatchesEach: {}

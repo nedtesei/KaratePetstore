@@ -1,0 +1,8 @@
+statusCode: 400
+headers: {}
+params:
+  username: fill some value
+body: null
+matchResponse: false
+responseMatch: null
+responseMatchesEach: {}

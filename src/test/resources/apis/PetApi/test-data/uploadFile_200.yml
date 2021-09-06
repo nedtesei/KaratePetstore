@@ -1,0 +1,12 @@
+statusCode: 200
+headers: {}
+params:
+  petId: 0
+  additionalMetadata: fill some value
+body: fill some value
+matchResponse: false
+responseMatch:
+  code: '##number'
+  type: '##string'
+  message: '##string'
+responseMatchesEach: {}
