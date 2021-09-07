@@ -1,0 +1,11 @@
+id: '#(id)'
+name: '#(name)'
+category:
+  id: 1
+  name: '#(myCategory)'
+photoUrls:
+- string
+tags:
+- id: 0
+  name: string
+status: '#(status)'
