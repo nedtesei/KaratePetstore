@@ -6,7 +6,7 @@ Descrpcio 2
 
 Background:
  # url 'https://petstore3.swagger.io/api/v3'
-* print 'esta a background'
+# * print 'esta a background'
 * url miVariableUrl
 
 Scenario:
@@ -206,3 +206,35 @@ Scenario: Formate Date
   * def dateFormat = new java.text.SimpleDateFormat('yyyy/MM/dd')
   * def temp2 = dateFormat.format(new java.util.Date())
   * print 'temp2:' +temp2
+
+
+Scenario Outline: Add new pet reusable <id> <name> <category> <status>
+* print 'id in parent before call:', id
+* def addPetResult = call read('BaseFeature.feature@addNewPet') { id: #(id), name: #(name), categ: #(categ), status: #(status) }
+* print 'id in parent after call:', id
+* print 'newVar:', addPetResult.newVar
+Examples:
+| id | name  | categ | status    |
+| 1  | dog   | one   | available |
+| 2  | cat   | two   | available |
+| 3  | bird  | three | sold      |
+
+ Scenario: Bucle natural
+ * def myArray = [{id: 1}, {id: 2}, {id: 3}]  
+ * call read('BaseFeature.feature@printArray') myArray
+
+@printArray
+Scenario: print array
+* print '__arg', __arg
+
+@addNewPet @ignore
+#ignore pq nomes s'executi si se crida l'escenari: no s'executa de manera automatica si executam tota la feature'
+Scenario: Add new pet reusable
+* print '__arg', __arg
+* print 'id', id
+* print '__arg.id', __arg.id
+* match id == __arg.id
+* eval id = id + 1
+* print 'id in child scenario:', id
+* def newVar = 'novaVar'
+ 
