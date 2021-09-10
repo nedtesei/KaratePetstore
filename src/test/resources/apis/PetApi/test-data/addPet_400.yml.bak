@@ -3,9 +3,9 @@ headers: {}
 params: null
 body:
   id: 10
-  name: doggie
+  name: ca
   category:
-    id: 1
+    id: hello
     name: Dogs
   photoUrls:
     - fill some value

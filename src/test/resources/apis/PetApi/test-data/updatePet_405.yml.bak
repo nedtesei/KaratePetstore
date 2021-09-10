@@ -12,7 +12,7 @@ body:
   tags:
     - id: 0
       name: fill some value
-  status: available
+  status: pending
 matchResponse: false
 responseMatch: null
 responseMatchesEach: {}

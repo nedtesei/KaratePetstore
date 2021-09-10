@@ -32,7 +32,6 @@ Scenario Outline: Test deletePet for <status> status code
 	* match result.responseStatus == <status>
 		Examples:
 		| status | testDataFile |
-  	    | 200 | 'test-data/deletePet_200.yml' |
 		| 400 | 'test-data/deletePet_400.yml' |
 
 

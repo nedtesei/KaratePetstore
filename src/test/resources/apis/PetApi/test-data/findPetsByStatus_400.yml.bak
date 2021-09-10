@@ -1,8 +1,7 @@
 statusCode: 400
 headers: {}
 params:
-  api_key: fill some value
-  petId: aa
+  status: available
 body: null
 matchResponse: false
 responseMatch: null

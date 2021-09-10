@@ -11,10 +11,10 @@ Background:
   "statusCode": 200,
   "headers": {},
   "params": {
-    "tags": ""
+    "tags": ["randomTag", "string"]
   },
   "body": null,
-  "matchResponse": false,
+  "matchResponse": true,
   "responseMatch": "##array",
   "responseMatchesEach": {}
 }

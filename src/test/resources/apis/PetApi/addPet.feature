@@ -13,10 +13,10 @@ Background:
   "params": null,
   "body": {
     "id": 10,
-    "name": "doggie",
+    "name": "ca",
     "category": {
       "id": 1,
-      "name": "Dogs"
+      "name": "Cans"
     },
     "photoUrls": [
       "fill some value"

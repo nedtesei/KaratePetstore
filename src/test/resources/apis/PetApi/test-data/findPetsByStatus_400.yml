@@ -1,7 +1,7 @@
 statusCode: 400
 headers: {}
 params:
-  status: available
+  status: inventat
 body: null
 matchResponse: false
 responseMatch: null

@@ -1,9 +1,19 @@
 statusCode: 200
 headers: {}
-params:
-  petId: 0
-body: null
-matchResponse: true
+params: null
+body:
+  id: 10
+  name: doggie
+  category:
+    id: 1
+    name: Dogs
+  photoUrls:
+    - fill some value
+  tags:
+    - id: 0
+      name: fill some value
+  status: sold
+matchResponse: false
 responseMatch:
   id: '##number'
   name: '#string'

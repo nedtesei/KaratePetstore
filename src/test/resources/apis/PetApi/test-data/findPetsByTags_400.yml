@@ -1,7 +1,7 @@
 statusCode: 400
 headers: {}
 params:
-  tags: ''
+  tags: 1
 body: null
 matchResponse: false
 responseMatch: null

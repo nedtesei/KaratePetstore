@@ -13,7 +13,7 @@ body:
     - id: 0
       name: fill some value
   status: sold
-matchResponse: false
+matchResponse: true
 responseMatch:
   id: '##number'
   name: '#string'

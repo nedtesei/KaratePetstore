@@ -2,7 +2,6 @@ Feature: uploads an image
 	
 
 Background:
-* configure charset = 'UTF-8'
 * url baseUrl
 # You may read this inlineRequest as request/response documentation o use it for quick exploratory testing
 * def inlineRequest =
@@ -33,7 +32,6 @@ Scenario: explore uploadFile inline
 
 Scenario Outline: Test uploadFile for <status> status code
 	* def req = read(<testDataFile>)
-  * def img = read('test-data/karate-logo.png')
 	* def result = call read('uploadFile.feature@operation') req
 	* match result.responseStatus == <status>
 		Examples:

@@ -1,18 +1,18 @@
-statusCode: 405
+statusCode: 400
 headers: {}
 params: null
 body:
-  id: 10
-  name: ca
+  id: "hola"
+  name: doggie
   category:
-    id: hello
+    id: "categoria"
     name: Dogs
   photoUrls:
     - fill some value
   tags:
     - id: 0
       name: fill some value
-  status: available
+  status: pending
 matchResponse: false
 responseMatch: null
 responseMatchesEach: {}

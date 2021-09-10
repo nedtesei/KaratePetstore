@@ -1,5 +1,5 @@
-Feature: Find pet by ID
-	Returns a single pet
+Feature: Add a new pet to the store
+	Add a new pet to the store
 
 Background:
 * url baseUrl
@@ -10,11 +10,26 @@ Background:
   "auth": null,
   "statusCode": 200,
   "headers": {},
-  "params": {
-    "petId": 0
+  "params": null,
+  "body": {
+    "id": 10,
+    "name": "doggie",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "fill some value"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "fill some value"
+      }
+    ],
+    "status": "sold"
   },
-  "body": null,
-  "matchResponse": true,
+  "matchResponse": false,
   "responseMatch": {
     "id": "##number",
     "name": "#string",
@@ -37,35 +52,35 @@ Background:
 """
 
 @ignore @inline
-Scenario: explore getPetById inline
+Scenario: explore addPet inline
 	You may use this test for quick API exploratorial purposes.
-	* call read('getPetById.feature@operation') inlineRequest
+	* call read('addPet.feature@operation') inlineRequest
 
-Scenario Outline: Test getPetById for <status> status code
+Scenario Outline: Test addPet for <status> status code
 	* def req = read(<testDataFile>)
-	* def result = call read('getPetById.feature@operation') req
+	* def result = call read('addPet.feature@operation') req
 	* match result.responseStatus == <status>
 		Examples:
 		| status | testDataFile |
-		| 200 | 'test-data/getPetById_200.yml' |
-		| 400 | 'test-data/getPetById_400.yml' |
-		| 404 | 'test-data/getPetById_404.yml' |
+		| 200 | 'test-data/addPet_200.yml' |
+		| 400 | 'test-data/addPet_400.yml' |
 
 
 
 @ignore @operation
-Scenario: getPetById
+Scenario: addPet
 * def req = __arg
 * def authHeader = call read('classpath:karate-auth.js') req.auth
 * def headers = karate.merge(req.headers || {}, authHeader || {})
-Given path '/pet/', req.params.petId
+Given path '/pet'
 And headers headers
-When method GET
+And request req.body
+When method POST
 
-* if (req.matchResponse === true) karate.call('getPetById.feature@validate')
+* if (req.matchResponse === true) karate.call('addPet.feature@validate')
 
 @ignore @validate
-Scenario: validate getPetById
+Scenario: validate addPet
 
 * def expectedStatusCode = req.statusCode || responseStatus
 * match responseStatus == expectedStatusCode
